@@ -1,0 +1,50 @@
+{
+  "screen1": {
+   "isActive": true,
+   "remoteEntry": "http://localhost:5001/remoteEntry.js",
+   "exposedModule": "./Screen1Module",
+   "displayName": "Screen1Module",
+   "routePath": "screen1",
+   "ngModuleName": "Screen1Module",
+   "viaRoute": true,
+   "withInPage": false
+  }
+  ,
+   "screen1-home": {
+    "isActive": true,
+    "remoteEntry": "http://localhost:5001/remoteEntry.js",
+    "exposedModule": "./Screen1HomeComponent",
+    "componentName": "Screen1HomeComponent",
+    "viaRoute": false,
+    "withInPage": true
+   },
+  "screen2": {
+    "isActive": true,
+    "remoteEntry": "http://localhost:5002/remoteEntry.js",
+    "exposedModule": "./Screen2Module",
+    "displayName": "Screen2Module",
+    "routePath": "screen2",
+    "ngModuleName": "Screen2Module",
+    "viaRoute": true,
+    "withInPage": false
+   },
+
+   "screen2-home": {
+    "isActive": true,
+    "remoteEntry": "http://localhost:5002/remoteEntry.js",
+    "exposedModule": "./Screen2HomeComponent",
+    "componentName": "Screen2HomeComponent",
+    "viaRoute": false,
+    "withInPage": true
+   },
+   "screen3": {
+    "isActive": true,
+    "remoteEntry": "http://localhost:5003/remoteEntry.js",
+    "exposedModule": "./Screen3Module",
+    "displayName": "Screen3Module",
+    "routePath": "screen3",
+    "ngModuleName": "Screen3Module",
+    "viaRoute": true,
+    "withInPage": false
+   }
+ }
