@@ -22,13 +22,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   ],
   providers: [
     //cấu hình động các route đến các micro
-    // {
-    //   provide: APP_INITIALIZER,
-    //   useFactory: (mfeService: MfeServiceService) => () =>
-    //     mfeService.init(),
-    //   deps: [MfeServiceService],
-    //   multi: true,
-    // },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: (mfeService: MfeServiceService) => () =>
+        mfeService.init(),
+      deps: [MfeServiceService],
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent]
 })

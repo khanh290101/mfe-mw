@@ -16,6 +16,11 @@ export function buildRoutes(): Routes {
                     remoteName: key,
                     exposedModule: value.exposedModule
                 }).then(m => m[value.ngModuleName!])
+                .catch(err => {
+                  console.error(`Lỗi khi tải module từ ${key}:`, err);
+                  // Điều hướng đến một module lỗi
+                  return import('../error/error.module').then(m => m.ErrorModule);
+              })
             }
         });
     const notFound = [
