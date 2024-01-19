@@ -40,7 +40,6 @@ module.exports = {
             "screen1": "http://localhost:5001/remoteEntry.js",
             "screen2": "http://localhost:5002/remoteEntry.js",
             "screen3": "http://localhost:5003/remoteEntry.js",
-
         },
 
         shared: share({

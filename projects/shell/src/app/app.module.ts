@@ -21,13 +21,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     AppRoutingModule
   ],
   providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: (mfeService: MfeServiceService) => () =>
-        mfeService.init(),
-      deps: [MfeServiceService],
-      multi: true,
-    },
+    //cấu hình động các route đến các micro
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: (mfeService: MfeServiceService) => () =>
+    //     mfeService.init(),
+    //   deps: [MfeServiceService],
+    //   multi: true,
+    // },
   ],
   bootstrap: [AppComponent]
 })

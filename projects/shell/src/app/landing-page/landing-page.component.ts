@@ -7,10 +7,15 @@ import { CustomManifest, CustomRemoteConfig } from '../model/mf.model';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
+  //mảng chứa các cấu hình của remote modules
   remotes: CustomRemoteConfig[] = [];
   constructor() { }
   ngOnInit(): void {
+    //lấy manifest của Module Federation, chứa thông tin cấu hình của các micro frontends
     const manifest = getManifest<CustomManifest>();
+
+    //Lọc ra các remotes mà có viaRoute là true.
+    //chọn những MFEs được cấu hình để tải qua routing.
     this.remotes = Object.values(manifest).filter((v) => v.viaRoute === true);
   }
 }

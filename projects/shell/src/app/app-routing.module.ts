@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ShellHomeComponent } from './shell-home/shell-home.component';
 
 export const  routes: Routes = [
+  //cấu hình tĩnh route đến các micro
   {
     path: 'screen1',
     loadChildren: () => import('screen1/Screen1Module').then(m => m.Screen1Module)

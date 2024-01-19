@@ -1,20 +1,23 @@
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
-// const routes: Routes = [
-//   {
-//     path: '',
-//     redirectTo: 'screen1',
-//     pathMatch: 'full'
-//   },
-//   {
-//     path: 'screen1',
-//     loadChildren: () => import('./screen1/screen1.module').then(m => m.Screen1Module),
-//   }
-// ];
+export const APP_ROUTES: Routes = [
+  {
+    path: '',
+    redirectTo: 'screen1',
+    pathMatch: 'full'
+  },
+  {
+    path: 'screen1',
+    loadChildren: () => import('./screen1/screen1.module').then(m => m.Screen1Module),
+  }
+];
 
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
-// export class AppRoutingModule { }
+@NgModule({
+  imports: [
+    RouterModule.forRoot(APP_ROUTES),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule { }

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Screen2HomeComponent } from './screen2-home/screen2-home.component';
+import { Screen3HomeComponent } from './screen3-home/screen3-home.component';
 
 export const CALENDAR_ROUTES: Routes = [
   {
     path: '',
-    component: Screen2HomeComponent,
+    component: Screen3HomeComponent,
   }
 ];
 
@@ -15,4 +15,4 @@ export const CALENDAR_ROUTES: Routes = [
   ],
   exports: [RouterModule],
 })
-export class Screen2RoutingModule { }
+export class Screen3RoutingModule { }

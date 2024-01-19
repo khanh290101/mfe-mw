@@ -1,14 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { RouterModule, Routes } from '@angular/router';
 import { Screen2HomeComponent } from './screen2-home/screen2-home.component';
-export const CALENDAR_ROUTES: Routes = [
-  {
-    path: '',
-    component: Screen2HomeComponent,
-  }
-];
+import { Screen2RoutingModule } from './screen2-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +9,7 @@ export const CALENDAR_ROUTES: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(CALENDAR_ROUTES),
+    Screen2RoutingModule,
   ]
 })
 export class Screen2Module { }
